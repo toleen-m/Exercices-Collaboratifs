@@ -2,6 +2,8 @@
 def main():
     print(f"""=== MENU DU RESTAURANT ===
     
+------ Entrees ------
+
 {afficher_entrees()}
 
 -- Plats Principaux --
