@@ -1,6 +1,6 @@
 # Structure de départ (Personne 1)
 def main():
-    print(f"""=== MENU DU RESTAURANT ===
+
     
 ------ Entrees ------
 
