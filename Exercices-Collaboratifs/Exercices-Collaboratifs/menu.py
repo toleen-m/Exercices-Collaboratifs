@@ -15,17 +15,10 @@ def main():
 {afficher_desserts()}""")
 # Les autres ajouteront leur code ici
 
+
+#fonction
 def afficher_entrees():
-    return ("entrees")
-
-def afficher_plats_principaux():
-
-    return("plats principaux")
-
-
-def afficher_entrees():
-    return("""
-~Salade César classique~
+    return("""~Salade César classique~
     Croûtons maison, parmesan frais, vinaigrette crémeuse.
 ~Bruschetta~
     Tomates fraîches, basilic, huile d'olive, servie sur pain grillé.
@@ -33,6 +26,8 @@ def afficher_entrees():
     Velouté léger, parfait pour commencer sans être trop lourd.
 """)
 
+def afficher_plats_principaux():
+    return("plats principaux")
 
 def afficher_desserts():
     return("""-Tarte au Sucre
