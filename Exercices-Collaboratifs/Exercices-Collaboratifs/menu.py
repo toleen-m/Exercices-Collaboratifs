@@ -1,13 +1,30 @@
 # Structure de départ (Personne 1)
 def main():
-    print("=== MENU DU RESTAURANT ===")
+    print(f"""=== MENU DU RESTAURANT ===
+    
+------ Entrees ------
 
-if __name__ == "__main__":
-    main()
+{afficher_entrees()}
+
+-- Plats Principaux --
+
+{afficher_plats_principaux()}
+
+------ Desserts ------
+
+{afficher_desserts()}""")
+# Les autres ajouteront leur code ici
 
 def afficher_entrees():
-    print("""
-------------- Les entrees --------------
+    return ("entrees")
+
+def afficher_plats_principaux():
+
+    return("plats principaux")
+
+
+def afficher_entrees():
+    return("""
 ~Salade César classique~
     Croûtons maison, parmesan frais, vinaigrette crémeuse.
 ~Bruschetta~
@@ -16,5 +33,15 @@ def afficher_entrees():
     Velouté léger, parfait pour commencer sans être trop lourd.
 """)
 
-afficher_entrees()
+
+def afficher_desserts():
+    return("""-Tarte au Sucre
+-Croustade aux pommes
+-Creme glacée""")
+
+        
+if __name__ == "__main__":
+    main()
+
+
 
