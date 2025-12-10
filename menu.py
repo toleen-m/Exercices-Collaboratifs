@@ -1,7 +1,32 @@
-# Structure de départ (Personne 1)
+# Structure de départ (Personne 1 )
 def main():
-    print("=== MENU DU RESTAURANT ===")
-    # Les autres ajouteront leur code ici
+    print(f"""
+    
+------ Entrees ------
 
+{afficher_entrees()}
+
+-- Plats Principaux --
+
+{afficher_plats_principaux()}
+
+------ Desserts ------
+
+{afficher_desserts()}""")
+# Les autres ajouteront leur code ici
+
+def afficher_entrees():
+    return ("entrees")
+
+def afficher_plats_principaux():
+
+    return("plats principaux")
+
+def afficher_desserts():
+    return("""-Tarte au Sucre
+-Croustade aux pommes
+-Creme glacée""")
+
+        
 if __name__ == "__main__":
     main()
