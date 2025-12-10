@@ -27,7 +27,9 @@ def afficher_entrees():
 """)
 
 def afficher_plats_principaux():
-    return("plats principaux")
+    return("""-couscouss marocain
+-boeuf au champignons
+-pastilla""")
 
 def afficher_desserts():
     return("""-Tarte au Sucre
