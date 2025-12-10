@@ -9,7 +9,9 @@ def ajouter_livre(titre, auteur):
 
 
 def afficher_livres():
-    pass
+    print(f"Les {len(bibliotheque)} livres disponibles sont :")
+    for livre in bibliotheque:
+         print(f"Titre: {livre['titre']} - Auteur: {livre['auteur']}")
 
 def rechercher_livre(titre):
     pass
