@@ -16,8 +16,10 @@ def afficher_livres():
          print(f"Titre: {livre['titre']} - Auteur: {livre['auteur']}")
 
 def rechercher_livre(titre):
-    pass
-
+    for livre in bibliotheque:
+        if titre in livre :
+            return livre
+    return "ce livre est introuvable"
 choix_utilisateur = 0
 
 menu_principal = """
