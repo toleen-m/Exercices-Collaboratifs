@@ -2,10 +2,12 @@
 bibliotheque = []
 
 def ajouter_livre(titre, auteur):
-    if titre in bibliotheque:
-        print("Livre existe déja dans la biblitheque")
-    else:
-        bibliotheque.append({"titre": titre, "auteur": auteur})
+    for livre in bibliotheque:
+        if titre.lower() == livre["titre"].lower():
+            print("Livre existe déja dans la biblitheque")
+            return
+    # sinon ca va sajouter
+    bibliotheque.append({"titre": titre, "auteur": auteur})
 
 
 def afficher_livres():
