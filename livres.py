@@ -17,8 +17,9 @@ def afficher_livres():
 
 def rechercher_livre(titre):
     for livre in bibliotheque:
-        if titre in livre :
-            return livre
+        
+        if titre in livre["titre"] :            
+            return f"Titre: {livre['titre']} - Auteur: {livre['auteur']}"
     return "ce livre est introuvable"
 choix_utilisateur = 0
 
@@ -47,6 +48,7 @@ while True:
         titre_a_rechercher = input("\nEntrez le titre du livre a rechercher: ")
         rechercher_livre(titre_a_rechercher)
         print(f"\nRecherche de: {titre_a_rechercher}")
+        print(f"Résultat: {rechercher_livre(titre_a_rechercher)}")
         
 
     elif choix_utilisateur == "4":     #menu Quitter

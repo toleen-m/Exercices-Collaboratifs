@@ -2,18 +2,25 @@
 bibliotheque = []
 
 def ajouter_livre(titre, auteur):
-    if titre in bibliotheque:
-        print("Livre existe déja dans la biblitheque")
-    else:
-        bibliotheque.append({"titre": titre, "auteur": auteur})
+    for livre in bibliotheque:
+        if titre.lower() == livre["titre"].lower():
+            print("Livre existe déja dans la biblitheque")
+            return
+    # sinon ca va sajouter
+    bibliotheque.append({"titre": titre, "auteur": auteur})
 
 
 def afficher_livres():
-    print(bibliotheque)
+    print(f"Les {len(bibliotheque)} livres disponibles sont :")
+    for livre in bibliotheque:
+         print(f"Titre: {livre['titre']} - Auteur: {livre['auteur']}")
 
 def rechercher_livre(titre):
-    pass
-
+    for livre in bibliotheque:
+        
+        if titre in livre["titre"] :            
+            return f"Titre: {livre['titre']} - Auteur: {livre['auteur']}"
+    return "ce livre est introuvable"
 choix_utilisateur = 0
 
 menu_principal = """
@@ -41,6 +48,7 @@ while True:
         titre_a_rechercher = input("\nEntrez le titre du livre a rechercher: ")
         rechercher_livre(titre_a_rechercher)
         print(f"\nRecherche de: {titre_a_rechercher}")
+        print(f"Résultat: {rechercher_livre(titre_a_rechercher)}")
         
 
     elif choix_utilisateur == "4":     #menu Quitter
