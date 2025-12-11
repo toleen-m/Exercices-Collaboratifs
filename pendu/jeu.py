@@ -6,6 +6,7 @@ def jouer_tour(mot_secret, lettres_trouvees, lettre):
     if char == lettre :
         lettres_trouvees [i] = lettre
         bonne_lettre = True
-            return bonne_lettre
+        return bonne_lettre
+
     
     
