@@ -9,7 +9,7 @@ def affichage_pendu(erreur):
     if erreur > 6: # securiter pour chiffre trop grand
         erreur = 6
         
-    dessin = ["""
+    dessin = [r"""
   +---+
   |   |
       |
@@ -18,25 +18,25 @@ def affichage_pendu(erreur):
       |
 =========
 """,
-"""
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-""",
-"""
+r"""
   +---+
   |   |
   O   |
+      |
+      |
+      |
+=========
+""",
+r"""
+  +---+
+  |   |
+  O   |
   |   |
       |
       |
 =========
 """,
-"""
+r"""
   +---+
   |   |
   O   |
@@ -45,7 +45,7 @@ def affichage_pendu(erreur):
       |
 =========
 """,
-"""
+r"""
   +---+
   |   |
   O   |
@@ -54,7 +54,7 @@ def affichage_pendu(erreur):
       |
 =========
 """,
-"""
+r"""
   +---+
   |   |
   O   |
@@ -63,7 +63,7 @@ def affichage_pendu(erreur):
       |
 =========
 """,
-"""
+r"""
   +---+
   |   |
   O   |
