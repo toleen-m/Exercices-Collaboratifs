@@ -35,7 +35,7 @@ while True:
         break
 
     # si le nombre de vie est à 0, le joueur a perdu
-    elif erreur > 6:
+    elif erreur >= 6:
         print("Perdu !")
         print(f"Le mot secret était : {secret_word} !")
         break
