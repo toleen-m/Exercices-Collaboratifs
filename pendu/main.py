@@ -34,7 +34,7 @@ while True:
         print("Mot trouvé !")
         break
 
-    # si le nombre de vie est à 0, le joueur a perdu
+    # si le nombre d'erreur est à 6, le joueur a perdu
     elif erreur >= 6:
         print("Perdu !")
         print(f"Le mot secret était : {secret_word} !")
